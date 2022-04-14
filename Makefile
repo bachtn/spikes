@@ -5,7 +5,7 @@ install-dependencies:
 
 .PHONY: install-dev-dependencies  ## 🧪 install all dependencies (dev and production)
 install-dev-dependencies:
-	$(MAKE) dependences && pip install -r requirements-dev.txt
+	$(MAKE) install-dependencies && pip install -r requirements-dev.txt
 
 .PHONY: lint  ## ✅ check if coding style respect the PEP8 standards
 lint:
